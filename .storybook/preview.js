@@ -1,4 +1,4 @@
-import { ThemeProvider } from '../src/'
+import { GlobalStyles, ThemeProvider } from '../src/'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -13,6 +13,7 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <ThemeProvider>
+      <GlobalStyles/>
       <Story />
     </ThemeProvider>
   ),

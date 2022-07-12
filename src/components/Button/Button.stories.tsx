@@ -24,3 +24,10 @@ Secondary.args = {
     variant: 'secondary',
     children: 'Button',
 };
+
+export const ButtonAsAnchor = Template.bind({});
+ButtonAsAnchor.args = {
+    variant: 'primary',
+    as: 'a',
+    children: 'Button',
+};
