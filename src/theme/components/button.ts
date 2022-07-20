@@ -1,20 +1,21 @@
 import { Theme } from 'theme-ui';
+import { ExactTheme } from '..';
 
 export const buttons: Theme['buttons'] = {
     primary: {
-        color: 'background',
+        color: (theme: ExactTheme) => theme.colors.background,
         cursor: 'pointer',
-        bg: 'primary',
+        bg: (theme: ExactTheme) => theme.colors.primary,
         '&:hover': {
-            bg: 'secondary',
+            bg: (theme: ExactTheme) => theme.colors.secondary,
         },
     },
     secondary: {
-        color: 'background',
+        color: (theme: ExactTheme) => theme.colors.background,
         cursor: 'pointer',
-        bg: 'secondary',
+        bg: (theme: ExactTheme) => theme.colors.secondary,
         '&:hover': {
-            bg: 'primary',
+            bg: (theme: ExactTheme) => theme.colors.primary,
         },
     },
 };
