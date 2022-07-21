@@ -20,6 +20,7 @@ export const theme = makeTheme({
         background: '#fff',
         primary: '#33e',
         secondary: '#e33',
+        error: 'red',
     },
     ...themeUiComponentStyles,
     styles: markdownStyles,

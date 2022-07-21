@@ -11,4 +11,8 @@ export const text: Theme['text'] = {
         textTransform: 'uppercase',
         letterSpacing: '0.2em',
     },
+    error: {
+        variant: 'text.default',
+        color: (theme: ExactTheme) => theme.colors.error,
+    },
 };
